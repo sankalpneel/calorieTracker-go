@@ -10,11 +10,10 @@ Routes
 
 
 	router.GET("/hello", routes.Hello)
-	router.POST("/entry/create", routes.AddEntry)
-	router.GET("/entries", routes.GetEntries)
-	router.GET("/entries/:id/", routes.GetEntryById)
-	router.GET("ingredient/:ingredient", routes.GetEntriesByIngredient)
+	router.POST("/entry/create", routes.AddEntry) // Crete
+	router.GET("/entries", routes.GetEntries) // Read
+	router.GET("/entries/:id/", routes.GetEntryById) //  Read by id
 
-	router.PUT("/entry/update/:id", routes.UpdateEntry)
-	router.PUT("/ingredient/update/:id", routes.UpdateIngredient)
-	router.DELETE("/entry/delete/:id", routes.DeleteEntry)
+	router.PUT("/entry/update/:id", routes.UpdateEntry) // Update
+	router.PUT("/ingredient/update/:id", routes.UpdateIngredient) // Update by id
+	router.DELETE("/entry/delete/:id", routes.DeleteEntry) // Delete
